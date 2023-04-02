@@ -3,5 +3,6 @@
 <node name="robot_state_publisher" pkg="robot_state_publisher" type ="robot_state_publisher"/>
 <node name="joint_state_publisher" pkg="joint_state_publisher" type ="joint_state_publisher"/>
 <node name="rviz" pkg ="rviz" type ="rviz" args="-d $(find igor_r2d2)/config/r2d2.rviz"/>
-<remap from="/different_topic" to="/needed_topic"/>
-</launch>
+<remap from="/cmd_vel" to="/turtle1/cmd_vel"/>
+<node name="fake_r2d2_controller" pkg="r2d2_navigator" type ="fake_r2d2_controller"/>
+</launch> 
