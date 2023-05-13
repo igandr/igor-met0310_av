@@ -1,0 +1,6 @@
+<launch>
+  <arg name="model" default="$(env igorr2d2)" doc="model type [igorr2d2]"/>
+  <param name="model" value="$(arg model)"/>
+  <node pkg="my_gazebo" type="r2d2_teleop_key.py" name="r2d2_teleop_keyborad"  output="screen">
+  </node>
+</launch>

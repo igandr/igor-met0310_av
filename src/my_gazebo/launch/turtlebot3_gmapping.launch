@@ -1,0 +1,6 @@
+<launch>
+  <arg name="model" default="$(env igorr2d2)" doc="model type [igorr2d2]"/>
+
+  <node pkg="gmapping" type="slam_gmapping" name="turtlebot3_slam_gmapping" output="screen">
+  </node>
+</launch>
